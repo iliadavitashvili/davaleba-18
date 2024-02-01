@@ -1,0 +1,33 @@
+
+*{
+    box-sizing: border-box;
+
+}
+
+body{
+    margin: 0;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+   
+}
+
+.reg-button{
+    width: 50%;
+    align-self: center;
+    padding: 10px 25px;
+}
+input{
+    height: 2rem;
+}
+textarea{
+    height: 4rem;
+}
+.err-paragraph{
+    border: 1px solid transparent;
+    opacity: 0;
+    transition: 0.5s;
+}
