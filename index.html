@@ -9,44 +9,65 @@
   </head>
   <body>
     <form action="#" id="registration" name="registration" class="form">
+      <label for="first-name">Enter Your First Name</label>
       <input
         type="text"
         name="first-name"
         id="first-name"
-        placeholder="Enter Your First Name"
+        placeholder="John"
       />
       <p class="err-paragraph" id="f-name-err" name="f-name"></p>
+      <label for="last-name">Enter Your Last Name</label>
       <input
         type="text"
         name="last-name"
         id="last-name"
-        placeholder="Enter Your Last Name"
+        placeholder="Schmoe"
       />
       <p class="err-paragraph" id="l-name-err"></p>
+      <label for="email">Enter Your Email</label>
       <input
-        type="email"
+        type="text"
         name="email"
         id="email"
-        placeholder="Enter Your Email"
+        placeholder="johnSchmoe@gmail.com"
       />
       <p class="err-paragraph" id="email-err"></p>
+
+      <label for="password">Enter Passowrd</label>
       <input
         type="password"
         name="password"
         id="password"
-        placeholder="Enter Password"
+        placeholder="*********"
       />
       <p class="err-paragraph" id="password-err"></p>
+
+      <label for="repeat-password">Repeat Password</label>
       <input
         type="password"
         name="repeat-password"
         id="repeat-password"
-        placeholder="Repeat Password"
+        placeholder="*********"
       />
       <p class="err-paragraph" id="r-password-err"></p>
-      <textarea placeholder="Enter Description" id="description"></textarea>
+      <label for="description">Enter Description (optional)</label>
+      <textarea placeholder="text goes here..." id="description" name="description"></textarea>
       <p class="err-paragraph" id="desc-err"></p>
       <button class="reg-button" id="reg-button">Registration</button>
     </form>
+    <div class="davaleba-2">
+      <form id="add">
+        <input type="text" id="add-text" name="add"/>
+        <button>Add</button>
+      </form>
+      <ul id="list-ul">
+
+      </ul>
+    </div>
+
+    <ul id="filtered" class="filtered">
+      
+    </ul>
   </body>
 </html>
