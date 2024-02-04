@@ -135,7 +135,12 @@ addButton.addEventListener("submit", (e) => {
   list.push(inputValues.add["add-text"].value);
   listUl.innerHTML = "";
   textInut.value = "";
-  list.map((item) => (listUl.innerHTML += `<li>${item}</li>`));
+  list.map((item) => {
+    const listItem = document.createElement("li")
+    // listUl.innerHTML += `<li>${item}</li>`
+    listItem.textContent = item
+    listUl.appendChild(listItem)
+  });
 });
 
 // დავალება 3
